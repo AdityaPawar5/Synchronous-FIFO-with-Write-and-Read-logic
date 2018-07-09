@@ -6,6 +6,7 @@
 // Place: Cadence Design Systems, Inc.
 // Date: July 10, 2008
 //***********************************************************//
+```
 module mem_array #(parameter ADDR_WIDTH = 4,parameter DEPTH = 16,parameter DATA_WIDTH = 16)
 (
 input [ADDR_WIDTH-1:0] write_addr,input [ADDR_WIDTH-1:0] read_addr,
@@ -28,3 +29,4 @@ begin
 	end
 end
 endmodule
+```
