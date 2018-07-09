@@ -2,7 +2,8 @@
 // File Name: sync_fifo.v
 // Module Name: sync_fifo
 // Description: Synchronous FIFO
-// Author: Asim Anand// Place: Cadence Design Systems, Inc.
+// Author: Asim Anand
+// Place: Cadence Design Systems, Inc.
 // Date: July 10, 2008
 //***********************************************************//
 module sync_fifo #(parameter ADDR_WIDTH = 4,parameter DATA_WIDTH = 16,parameter DEPTH = 16,parameter AEMPTY = 3,parameter AFULL = 3)
