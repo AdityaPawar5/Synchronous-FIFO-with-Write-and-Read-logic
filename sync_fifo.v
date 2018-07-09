@@ -21,7 +21,7 @@ output fifo_aempty,
 output fifo_full,
 output fifo_afull,
 output write_ack,
-
+);
 wire [ADDR_WIDTH:0] read_ptr;
 wire [ADDR_WIDTH:0] write_ptr;
 wire read_enable;
