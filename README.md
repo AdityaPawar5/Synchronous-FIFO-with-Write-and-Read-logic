@@ -23,3 +23,16 @@ always @*
  end
  ```
 <br/>Here **AFUL**L signifies the almost full-level. User can set it to 4, 8 or whatever value depending on how soon it wants to intimate the source aboutimpending full condition. (AFULL=4)means almost full flag will getasserted when at most 4 locations are left for new data.
+
+\Following piece of verilog code shows logic almost empty generation:
+\//assigning fifo almost empty
+```
+always @*
+ begin
+  if (read_ptr[8] == write_ptr[8])
+   fifo_aempty = ( (write_ptr[7:0] - read_ptr[7:0]) <= AEMPTY );
+  else
+   fifo_aempty = ((read_ptr[8:0] - write_addr[8:0])>= (DEPTH - AEMPTY));
+ end
+ ```
+\Here **AEMPTY** signifies the almost empty-level. User can set it to 4, 8 or whatever value depending on how soon it wants to intimate the requestor about impending empty condition. (AEMPTY=4) means almost empty flagwill get asserted when at most 4 data locations are left to be read.
