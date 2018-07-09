@@ -9,10 +9,18 @@
 
 module read_control_logic #(parameter ADDR_WIDTH = 4,parameter AEMPTY = 3,parameter DEPTH = 16)
 (// Inputs
-input [ADDR_WIDTH:0] write_ptr,input clk,input reset_n,input flush,input read_req,
+input [ADDR_WIDTH:0] write_ptr,
+input clk,
+input reset_n,
+input flush,
+input read_req,
 // Outputs
-output read_enable,output reg rdata_valid,output fifo_empty,output reg fifo_aempty,
+output read_enable,
+output reg rdata_valid,
+output fifo_empty,
+output reg fifo_aempty,
 output reg [ADDR_WIDTH:0] read_ptr );
+
 wire [ADDR_WIDTH-1:0] read_addr;
 wire [ADDR_WIDTH-1:0] write_addr;
 
