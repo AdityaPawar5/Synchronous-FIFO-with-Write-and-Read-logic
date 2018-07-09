@@ -36,3 +36,6 @@ always @*
  end
  ```
 <br/>Here **AEMPTY** signifies the almost empty-level. User can set it to 4, 8 or whatever value depending on how soon it wants to intimate the requestor about impending empty condition. (AEMPTY=4) means almost empty flagwill get asserted when at most 4 data locations are left to be read.
+
+
+<br/> Link to the whole document: https://www.scribd.com/doc/17224033/PROJECT-ON-SYNCHRONOUS-FIFO-DESIGN-SIMULATION-VERIFICATION-and-SYNTHESIS-using-VERILOG
