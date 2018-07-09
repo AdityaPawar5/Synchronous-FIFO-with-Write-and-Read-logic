@@ -25,7 +25,7 @@ always @*
 <br/>Here **AFUL**L signifies the almost full-level. User can set it to 4, 8 or whatever value depending on how soon it wants to intimate the source aboutimpending full condition. (AFULL=4)means almost full flag will getasserted when at most 4 locations are left for new data.
 
 <br/>Following piece of verilog code shows logic almost empty generation:
-//assigning fifo almost empty
+<br/>//assigning fifo almost empty
 ```
 always @*
  begin
